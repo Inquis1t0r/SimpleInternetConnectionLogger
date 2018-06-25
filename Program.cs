@@ -18,7 +18,7 @@ namespace SimpleInternetConnectionLogger
                 try
             {
                 Ping myPing = new Ping();
-                PingReply reply = myPing.Send("bertrand.pl", 1000);
+                PingReply reply = myPing.Send("google.pl", 1000);
                 if (reply != null)
                 {
                     Console.WriteLine(currentTime + " Status: " + reply.Status + " Ping:" + reply.RoundtripTime.ToString() + " ms " + " Address : " + reply.Address);
